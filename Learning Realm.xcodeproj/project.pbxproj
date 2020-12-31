@@ -13,6 +13,8 @@
 		380D63BA259E09FE003903B7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 380D63B8259E09FE003903B7 /* Main.storyboard */; };
 		380D63BC259E09FF003903B7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 380D63BB259E09FF003903B7 /* Assets.xcassets */; };
 		380D63BF259E09FF003903B7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 380D63BD259E09FF003903B7 /* LaunchScreen.storyboard */; };
+		380D63C9259E0E46003903B7 /* PersonModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 380D63C8259E0E46003903B7 /* PersonModel.swift */; };
+		BB8DCDDB9A4DF401F8375F6E /* Pods_Learning_Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5D0B274CF8F6DC19C199F4A /* Pods_Learning_Realm.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,10 @@
 		380D63BB259E09FF003903B7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		380D63BE259E09FF003903B7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		380D63C0259E09FF003903B7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		380D63C8259E0E46003903B7 /* PersonModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonModel.swift; sourceTree = "<group>"; };
+		97A736F1AA21ACAFAEBD068E /* Pods-Learning Realm.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Learning Realm.release.xcconfig"; path = "Target Support Files/Pods-Learning Realm/Pods-Learning Realm.release.xcconfig"; sourceTree = "<group>"; };
+		AAE2E44928740674672066E2 /* Pods-Learning Realm.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Learning Realm.debug.xcconfig"; path = "Target Support Files/Pods-Learning Realm/Pods-Learning Realm.debug.xcconfig"; sourceTree = "<group>"; };
+		D5D0B274CF8F6DC19C199F4A /* Pods_Learning_Realm.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Learning_Realm.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BB8DCDDB9A4DF401F8375F6E /* Pods_Learning_Realm.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +49,8 @@
 			children = (
 				380D63B1259E09FE003903B7 /* Learning Realm */,
 				380D63B0259E09FE003903B7 /* Products */,
+				C2019CA343E4DD8A07538022 /* Pods */,
+				7A70895FA0010972C04CA591 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,6 +65,7 @@
 		380D63B1259E09FE003903B7 /* Learning Realm */ = {
 			isa = PBXGroup;
 			children = (
+				380D63C7259E0E21003903B7 /* Model */,
 				380D63B2259E09FE003903B7 /* AppDelegate.swift */,
 				380D63B4259E09FE003903B7 /* SceneDelegate.swift */,
 				380D63B6259E09FE003903B7 /* ViewController.swift */,
@@ -67,6 +77,32 @@
 			path = "Learning Realm";
 			sourceTree = "<group>";
 		};
+		380D63C7259E0E21003903B7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				380D63C8259E0E46003903B7 /* PersonModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		7A70895FA0010972C04CA591 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D5D0B274CF8F6DC19C199F4A /* Pods_Learning_Realm.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C2019CA343E4DD8A07538022 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AAE2E44928740674672066E2 /* Pods-Learning Realm.debug.xcconfig */,
+				97A736F1AA21ACAFAEBD068E /* Pods-Learning Realm.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +110,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 380D63C3259E09FF003903B7 /* Build configuration list for PBXNativeTarget "Learning Realm" */;
 			buildPhases = (
+				2B51772785FB16A70405D7E0 /* [CP] Check Pods Manifest.lock */,
 				380D63AB259E09FE003903B7 /* Sources */,
 				380D63AC259E09FE003903B7 /* Frameworks */,
 				380D63AD259E09FE003903B7 /* Resources */,
+				7CE39ED2F073959B1F0F3BDA /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -132,11 +170,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2B51772785FB16A70405D7E0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Learning Realm-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7CE39ED2F073959B1F0F3BDA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Learning Realm/Pods-Learning Realm-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Learning Realm/Pods-Learning Realm-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Learning Realm/Pods-Learning Realm-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		380D63AB259E09FE003903B7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				380D63C9259E0E46003903B7 /* PersonModel.swift in Sources */,
 				380D63B7259E09FE003903B7 /* ViewController.swift in Sources */,
 				380D63B3259E09FE003903B7 /* AppDelegate.swift in Sources */,
 				380D63B5259E09FE003903B7 /* SceneDelegate.swift in Sources */,
@@ -283,6 +364,7 @@
 		};
 		380D63C4259E09FF003903B7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AAE2E44928740674672066E2 /* Pods-Learning Realm.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -302,6 +384,7 @@
 		};
 		380D63C5259E09FF003903B7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 97A736F1AA21ACAFAEBD068E /* Pods-Learning Realm.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
